@@ -61,6 +61,26 @@ public class VentanaDepartamento {
 	}
 	
 	
+	public void actualizarDepartamento(Departamento dep) {
+		/*
+		Persona p =new Persona();
+		p.setCedula("010688778578");
+		p.setDireccion("Quito");
+		p.setNombre("Juan Robles");
+		*/
+		try {
+			depRemote.actualizarDepartamento(dep);
+			System.out.println("Departamento actualizado");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	
+	
 	public Departamento buscar(int casilla) {
 		Departamento d=new Departamento();
 		try {

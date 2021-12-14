@@ -168,7 +168,32 @@ public class CrearDepartamento extends JFrame {
     }                                                    
 
     private void actualizarDepartamentoActionPerformed(java.awt.event.ActionEvent evt) {                                                       
-        // TODO add your handling code here:
+    	try {
+    		VentanaDepartamento dep=new VentanaDepartamento();
+			dep.conectar();
+			Departamento d=new Departamento();
+			int cod;
+			String dir;
+			int numd;
+			int numP;
+			
+
+			cod = Integer.parseInt(codigo.getText());
+			dir = direccion.getText();
+			numd=Integer.parseInt(ndep.getText());
+			numP=Integer.parseInt(npip.getText());
+			
+			d.setCodido(cod);
+			d.setDireccion(dir);
+			d.setNumDepartamento(numd);
+			d.setNumPiso(numP);
+			dep.actualizarDepartamento(d);
+			//System.out.println("Persona insertada");
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }                                                      
 
    
