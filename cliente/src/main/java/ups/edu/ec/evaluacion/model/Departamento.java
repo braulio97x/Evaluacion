@@ -2,28 +2,21 @@ package ups.edu.ec.evaluacion.model;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name="TBL_Departamento")
 public class Departamento implements Serializable {
 	
-/**
+
+ /**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-@Id
-@Column(name = "dep_codigo")
- private int codido;
-@Column(name = "dep_direccion")
+
+private int codido;
+
  private String direccion;
 
-@Column(name = "dep_numDepartamento")
+
  private int numDepartamento;
-@Column(name = "dep_numPiso")
+
  private int numPiso;
 public int getCodido() {
 	return codido;
