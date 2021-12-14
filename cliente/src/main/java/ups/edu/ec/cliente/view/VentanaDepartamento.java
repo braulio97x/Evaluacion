@@ -43,12 +43,7 @@ public class VentanaDepartamento {
 
 	
 	public void insertarDepartamento(Departamento dep) {
-		/*
-		Persona p =new Persona();
-		p.setCedula("010688778578");
-		p.setDireccion("Quito");
-		p.setNombre("Juan Robles");
-		*/
+		
 		try {
 			depRemote.insertarDepartamento(dep);
 			System.out.println("Departamento insertado");
@@ -62,12 +57,7 @@ public class VentanaDepartamento {
 	
 	
 	public void actualizarDepartamento(Departamento dep) {
-		/*
-		Persona p =new Persona();
-		p.setCedula("010688778578");
-		p.setDireccion("Quito");
-		p.setNombre("Juan Robles");
-		*/
+		
 		try {
 			depRemote.actualizarDepartamento(dep);
 			System.out.println("Departamento actualizado");
@@ -98,23 +88,7 @@ public class VentanaDepartamento {
 	}
 	
 	
-	/*
-	public Persona buscar(String casilla) {
-		Persona p=new Persona();
-		try {
-			p=cliRemote.buscarPersona(casilla);
-			
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			
-			e.printStackTrace();
-			
-		}
-		
-		return p;
-		
-	}
-	*/
+	
 	
 	/*
 	public static void main(String[] args) {
