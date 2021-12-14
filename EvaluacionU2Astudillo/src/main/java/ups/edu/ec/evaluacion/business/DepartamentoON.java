@@ -18,4 +18,8 @@ public class DepartamentoON implements DepartamentoONLocal, DepartamentoONRemote
 	public void actualizarDepartamento(Departamento departamento) throws Exception{
 		daoDep.update(departamento);
 	}
+	
+	public Departamento buscarDepartamento(int codigo) throws Exception{
+		return daoDep.read(codigo);
+	}
 }

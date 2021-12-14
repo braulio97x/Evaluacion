@@ -61,6 +61,23 @@ public class VentanaDepartamento {
 	}
 	
 	
+	public Departamento buscar(int casilla) {
+		Departamento d=new Departamento();
+		try {
+			d=depRemote.buscarDepartamento(casilla);
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			
+			e.printStackTrace();
+			
+		}
+		
+		return d;
+		
+	}
+	
+	
 	/*
 	public Persona buscar(String casilla) {
 		Persona p=new Persona();

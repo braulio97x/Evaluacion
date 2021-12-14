@@ -27,7 +27,7 @@ public class DepartamentoDAO {
 		em.merge(dep);
 	}
 	
-	public Departamento read(String id) {
+	public Departamento read(int id) {
 		Departamento dep = em.find(Departamento.class, id);
 		return dep;
 	}
